@@ -35,3 +35,17 @@ mecab.parse(text, function (err, items) {
 */
 ```
 
+## Option
+
+```
+var Mecab = require('mecab-lite');
+var mecab = new Mecab();
+// set options
+mecab.MECAB = '/usr/local/bin/mecab'; // path to MeCab command
+mecab.ENCODING = 'SHIFT_JIS';         // or 'UTF-8'
+mecab.BUFFER_SIZE = 1024 * 1024 * 8; // 8MB
+```
+
+
+
+

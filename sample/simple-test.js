@@ -1,6 +1,6 @@
 // test for mecab
 
-var Mecab = require('../lib/mecab.js');
+var Mecab = require('../lib/mecab-lite.js');
 var mecab = new Mecab();
 
 var text = "すもももももももものうち";

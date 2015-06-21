@@ -1,8 +1,8 @@
 {
   "name": "mecab-lite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MeCab library for Node.js",
-  "main": "./lib/mecab",
+  "main": "./lib/mecab-lite",
   "dependencies": {
     "iconv-lite": "^0.4.10"
   },
