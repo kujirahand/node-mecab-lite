@@ -1,6 +1,6 @@
 {
-  "name": "node-mecab-lite",
-  "version": "0.0.1",
+  "name": "mecab-lite",
+  "version": "0.0.2",
   "description": "MeCab library for Node.js",
   "main": "./lib/mecab",
   "dependencies": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/kujirahand/node-mecab-lite/issues"
   },
-  "homepage": "https://github.com/kujirahand/node-mecab-lite"
+  "homepage": "https://github.com/kujirahand/node-mecab-lite",
+  "private": false
 }
+
+
+

@@ -14,7 +14,7 @@ npm install macab-lite
 ##Usage
 
 ```
-var Mecab = require('../lib/mecab.js');
+var Mecab = require('mecab-lite');
 var mecab = new Mecab();
 
 var text = "すもももももももものうち";
