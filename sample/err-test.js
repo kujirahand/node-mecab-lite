@@ -9,6 +9,8 @@ var text = "すもももももももものうち";
 // これにより必ずエラーを発生させる
 mecab.MECAB = "/bin/hoge/hoge/mecab";
 
+console.log("エラーを発生させるテスト");
+
 // sync
 var items = mecab.parseSync(text);
 console.log(items);
