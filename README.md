@@ -5,13 +5,33 @@ node-mecab-lite
 
 - MeCab - http://taku910.github.io/mecab/
 
-##Install
+## Install
 
 ```
 npm install macab-lite
 ```
 
-##Usage
+## Usage
+
+Please install Mecab command to your system.
+When you install MeCab to Windows, you must choise SHIFT-JIS dictionary.
+
+
+Sync method:
+
+```
+var Mecab = require('../lib/mecab-lite.js');
+var mecab = new Mecab();
+
+// parse
+var text = "すもももももももものうち";
+var items = mecab.parseSync(text);
+console.log(items);
+
+// wakatigaki
+var items2 = mecab.wakatigakiSync(text);
+console.log(items2);
+```
 
 ASync method:
 
@@ -39,22 +59,6 @@ mecab.parse(text, function (err, items) {
 mecab.wakatigaki(text, function (err, items) {
   console.log(items);
 });
-```
-
-Sync method:
-
-```
-var Mecab = require('../lib/mecab-lite.js');
-var mecab = new Mecab();
-
-// parse
-var text = "すもももももももものうち";
-var items = mecab.parseSync(text);
-console.log(items);
-
-// wakatigaki
-var items2 = mecab.wakatigakiSync(text);
-console.log(items2);
 ```
 
 
