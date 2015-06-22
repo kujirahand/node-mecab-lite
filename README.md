@@ -1,5 +1,8 @@
-node-mecab-lite
+mecab-lite
 ==========
+MeCab module for Node.js.
+
+Tested by Mac OS X(Yosemite)/Cent OS6.6/Windows7.
 
 ## Requirements
 
