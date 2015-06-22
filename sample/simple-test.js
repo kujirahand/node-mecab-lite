@@ -5,6 +5,7 @@ var mecab = new Mecab();
 
 var text = "すもももももももものうち";
 
+// MeCabを実行する
 mecab.parse(text, function (err, items) {
   console.log(items);
 });
@@ -19,3 +20,9 @@ mecab.parse(text, function (err, items) {
   [ 'うち', '名詞', '非自立', '副詞可能', '*', '*', '*', 'うち', 'ウチ', 'ウチ' ],
   [ 'EOS' ] ]
 */
+
+// わかちがきの例
+mecab.wakatigaki(text, function (err, items) {
+  console.log(items);
+});
+

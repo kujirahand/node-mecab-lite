@@ -13,6 +13,8 @@ npm install macab-lite
 
 ##Usage
 
+ASync method:
+
 ```
 var Mecab = require('mecab-lite');
 var mecab = new Mecab();
@@ -33,7 +35,28 @@ mecab.parse(text, function (err, items) {
   [ 'うち', '名詞', '非自立', '副詞可能', '*', '*', '*', 'うち', 'ウチ', 'ウチ' ],
   [ 'EOS' ] ]
 */
+
+mecab.wakatigaki(text, function (err, items) {
+  console.log(items);
+});
 ```
+
+Sync method:
+
+```
+var Mecab = require('../lib/mecab-lite.js');
+var mecab = new Mecab();
+
+// parse
+var text = "すもももももももものうち";
+var items = mecab.parseSync(text);
+console.log(items);
+
+// wakatigaki
+var items2 = mecab.wakatigakiSync(text);
+console.log(items2);
+```
+
 
 ## Option
 
@@ -43,7 +66,7 @@ var mecab = new Mecab();
 // set options
 mecab.MECAB = '/usr/local/bin/mecab'; // path to MeCab command
 mecab.ENCODING = 'SHIFT_JIS';         // or 'UTF-8'
-mecab.BUFFER_SIZE = 1024 * 1024 * 8; // 8MB
+mecab.TMP_DIR = process.env['HOME'] + '/tmp'; // temporary dir
 ```
 
 
